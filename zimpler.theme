@@ -1,0 +1,78 @@
+!define GREEN     #00A599
+!define BLACK     #222931
+!define TURQUOISE #25DDD3
+!define BLUE      #4776BC
+!define RED       #F8645F
+!define WHITE     #FFFFFF
+!define LIGHTGREY #FAFAFA
+!define GREY      #595959
+!define DARKGREY  #393939
+
+
+' Base Setting
+skinparam Shadowing false
+skinparam BackgroundColor WHITE
+skinparam ComponentStyle uml2
+skinparam Default {
+  FontName  'Titilluim'
+  FontColor BLACK
+  FontSize  10
+  FontStyle plain
+}
+
+skinparam Sequence {
+  ArrowThickness 1
+  ArrowColor GREEN
+  ActorBorderThickness 1
+  LifeLineBorderColor GREEN
+  ParticipantBorderThickness 0
+}
+skinparam Participant {
+  BackgroundColor TURQUOISE
+  BorderColor DarkZimplerBreen
+  FontColor BLACK
+}
+
+skinparam Actor {
+  BackgroundColor GREEN
+  BorderColor GREEN
+}
+
+skinparam Activity {
+  BackgroundColor TURQUOISE
+  'BarColor
+  BorderColor GREEN
+  'BorderThickness
+  DiamondBackgroundColor WHITE
+  DiamondBorderColor GREEN
+  'DiamondFontColor
+  'DiamondFontName
+  'DiamondFontSize
+  'DiamondFontStyle
+  EndColor GREEN
+  'FontColor
+  'FontName
+  'FontSize
+  'FontStyle
+  StartColor GREEN
+}
+
+skinparam Note {
+  BackgroundColor WHITE
+  BorderColor GREEN
+  'BorderThickness
+  'FontColor
+  'FontName
+  'FontSize
+  'FontStyle
+  'Shadowing
+}
+
+skinparam SequenceBox {
+   BackgroundColor LIGHTGREY
+   BorderColor GREEN
+   FontColor DARKGREY
+   'FontName
+   'FontSize
+   'FontStyle
+}

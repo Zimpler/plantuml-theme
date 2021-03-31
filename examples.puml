@@ -1,0 +1,114 @@
+@startuml "colors.svg"
+!include ./zimpler.theme
+
+rectangle "green" {
+  rectangle "GREEN" GREEN
+}
+rectangle "black" {
+  rectangle "BLACK" BLACK
+}
+rectangle "turquoise" {
+  rectangle "TURQUOISE" TURQUOISE
+}
+rectangle "blue" {
+  rectangle "BLUE" BLUE
+}
+rectangle "red" {
+  rectangle "RED" RED
+}
+rectangle "white" {
+  rectangle "WHITE" WHITE
+}
+rectangle "lightgrey" {
+  rectangle "LIGHTGREY" LIGHTGREY
+}
+rectangle "grey" {
+  rectangle "GREY" GREY
+}
+rectangle "darkgrey" {
+  rectangle "DARKGREY" DARKGREY
+}
+
+@enduml
+
+@startuml "example-01.svg"
+!include ./zimpler.theme
+
+actor User
+participant "First Class" as A
+
+box "Some Box"
+  participant "Second Class" as B
+  participant "Last Class" as C
+end box
+
+User -> A: DoWork
+activate A
+
+ref over A : "Some Ref"
+
+A -> B: Create Request
+activate B
+
+alt condition
+  B -> C: DoWork
+  activate C
+else
+  C --> B: WorkDone
+  destroy C
+end
+
+B --> A: Request Created
+deactivate B
+
+A --> User: Done
+deactivate A
+
+@enduml
+
+@startuml "example-02.svg"
+!include ./zimpler.theme
+
+User << Human >>
+:Main Database: as MySql << Application >>
+(Start) << One Shot >>
+(Use the application) as (Use) << Main >>
+
+User -> (Start)
+User --> (Use)
+
+MySql --> (Use)
+@enduml
+
+@startuml "example-03.svg"
+!include ./zimpler.theme
+
+Class01 "1" *-- "many" Class02 : contains
+
+Class03 o-- Class04 : aggregation
+@enduml
+
+@startuml "example-04.svg"
+!include ./zimpler.theme
+
+
+() "Data Access" as DA
+
+DA - [First Component]
+[First Component] ..> () HTTP : use
+HTTP - [Web Server] << Apache >>
+@enduml
+
+
+@startuml "example-06.svg"
+!include ./zimpler.theme
+
+[AA] <<static lib>>
+[BB] <<shared lib>>
+[CC] <<static lib>>
+
+node node1
+node node2 <<shared node>>
+database Production
+
+@enduml

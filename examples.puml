@@ -10,6 +10,9 @@ rectangle "black" {
 rectangle "turquoise" {
   rectangle "TURQUOISE" TURQUOISE
 }
+rectangle "purple" {
+  rectangle "PURPLE" PURPLE
+}
 rectangle "blue" {
   rectangle "BLUE" BLUE
 }

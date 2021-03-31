@@ -1,8 +1,9 @@
 !define GREEN     #00A599
-!define BLACK     #222931
+!define BLACK     #14213d
 !define TURQUOISE #25DDD3
+!define PURPLE    #6AFDEF
 !define BLUE      #4776BC
-!define RED       #F8645F
+!define RED       #EF233C
 !define WHITE     #FFFFFF
 !define LIGHTGREY #FAFAFA
 !define GREY      #595959
@@ -14,7 +15,7 @@ skinparam Shadowing false
 skinparam BackgroundColor WHITE
 skinparam ComponentStyle uml2
 skinparam Default {
-  FontName  'Titilluim'
+  FontName  'Titillium Web'
   FontColor BLACK
   FontSize  10
   FontStyle plain
@@ -22,44 +23,44 @@ skinparam Default {
 
 skinparam Sequence {
   ArrowThickness 1
-  ArrowColor GREEN
+  ArrowColor PURPLE
   ActorBorderThickness 1
-  LifeLineBorderColor GREEN
+  LifeLineBorderColor PURPLE
   ParticipantBorderThickness 0
 }
 skinparam Participant {
-  BackgroundColor TURQUOISE
+  BackgroundColor PURPLE
   BorderColor DarkZimplerBreen
-  FontColor BLACK
+  FontColor WHITE
 }
 
 skinparam Actor {
-  BackgroundColor GREEN
-  BorderColor GREEN
+  BackgroundColor PURPLE
+  BorderColor PURPLE
 }
 
 skinparam Activity {
-  BackgroundColor TURQUOISE
+  BackgroundColor PURPLE
   'BarColor
-  BorderColor GREEN
+  BorderColor PURPLE
   'BorderThickness
   DiamondBackgroundColor WHITE
-  DiamondBorderColor GREEN
+  DiamondBorderColor PURPLE
   'DiamondFontColor
   'DiamondFontName
   'DiamondFontSize
   'DiamondFontStyle
-  EndColor GREEN
+  EndColor PURPLE
   'FontColor
   'FontName
   'FontSize
   'FontStyle
-  StartColor GREEN
+  StartColor PURPLE
 }
 
 skinparam Note {
   BackgroundColor WHITE
-  BorderColor GREEN
+  BorderColor PURPLE
   'BorderThickness
   'FontColor
   'FontName
@@ -70,8 +71,8 @@ skinparam Note {
 
 skinparam SequenceBox {
    BackgroundColor LIGHTGREY
-   BorderColor GREEN
-   FontColor DARKGREY
+   BorderColor PURPLE
+   FontColor WHITE
    'FontName
    'FontSize
    'FontStyle
